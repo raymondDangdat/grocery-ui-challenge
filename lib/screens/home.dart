@@ -60,6 +60,17 @@ class _HomeState extends State<Home> {
             ),
           ),
 
+          SliverToBoxAdapter(
+            child: _buildSectionTitle('Drinks', (){}),
+          ),
+
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 50.0),
+            sliver: SliverToBoxAdapter(
+              child: FreshProduce(),
+            ),
+          ),
+
         ],
       ),
       drawer: Drawer(),
