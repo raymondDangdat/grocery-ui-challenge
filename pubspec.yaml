@@ -12,6 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   hexcolor: ^2.0.0
+  flutter_svg: ^0.19.3
+  material_design_icons_flutter: ^4.0.5345
 
   cupertino_icons: ^1.0.2
 
@@ -25,11 +27,17 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - images/
-     - images/
-
+     - assets/icons/
+     - assets/images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
 
   # example:
+
   # fonts:
   #   - family: Schyler
   #     fonts:

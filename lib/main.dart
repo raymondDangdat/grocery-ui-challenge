@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './screens/screens.dart';
+import 'colors/colors.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,11 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Grocery UI',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: Home(),
+      home: NavScreen(),
+      routes: {
+        Home.routeName: (context) => Home(),
+      },
     );
   }
 }
