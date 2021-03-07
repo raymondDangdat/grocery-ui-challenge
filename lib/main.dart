@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Grocery UI',
       theme: ThemeData(
         primarySwatch: Colors.green,
+          fontFamily: "Poppins", primaryColor: primaryColor
       ),
       home: NavScreen(),
       routes: {
