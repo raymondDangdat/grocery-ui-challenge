@@ -1,4 +1,4 @@
-# Grocert UI Challenge
+# Grocery UI Challenge
 
 A Flutter UI for groceries, given as a challenge of a Medium post.
 
