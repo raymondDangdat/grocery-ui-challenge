@@ -1,6 +1,6 @@
-# grocery_ui
+# Grocert UI Challenge
 
-A new Flutter application.
+A Flutter UI for groceries, given as a challenge of a Medium post.
 
 ## Getting Started
 
