@@ -26,21 +26,21 @@ final List<FreshProduceModel> freshProduce = [
     price: 400,
   ),
   FreshProduceModel(
-    name: "Organic Moss",
-    description: "Avocados",
-    url: "assets/images/avocado.png",
+    name: "Rice",
+    description: "Cereals",
+    url: "assets/images/rice.png",
     price: 800,
   ),
   FreshProduceModel(
-    name: "Organic Moss",
-    description: "Avocados",
-    url: "assets/images/avocado.png",
+    name: "Sprite",
+    description: "Drinks",
+    url: "assets/images/sprite.png",
     price: 800,
   ),
   FreshProduceModel(
-    name: "Organic Moss",
-    description: "Avocados",
-    url: "assets/images/avocado.png",
+    name: "Vegetable Ba",
+    description: "Vegetables",
+    url: "assets/images/vegs_banner.png",
     price: 800,
   ),
   FreshProduceModel(
@@ -101,9 +101,9 @@ final List<CategoryModel> categories = [
 
 final List<FreshProduceModel> popular_items = [
   FreshProduceModel(
-    name: "Organic Moss",
-    description: "Avocados",
-    url: "assets/images/avocado.png",
+    name: "Noodles",
+    description: "Fast Food",
+    url: "assets/images/noodles.png",
     price: 500,
   ),
   FreshProduceModel(
@@ -153,9 +153,9 @@ final List<FreshProduceModel> popular_items = [
     price: 1000,
   ),
   FreshProduceModel(
-    name: "Organic Moss",
-    description: "Avocados",
-    url: "assets/images/avocado.png",
+    name: "Organic Juice",
+    description: "Juicy",
+    url: "assets/images/juice_apple.png",
     price: 800,
   ),
   FreshProduceModel(
@@ -165,21 +165,21 @@ final List<FreshProduceModel> popular_items = [
     price: 1000,
   ),
   FreshProduceModel(
-    name: "Egg",
+    name: "White Egg",
     description: "White Egg",
     url: "assets/images/egg_white.png",
     price: 1000,
   ),
   FreshProduceModel(
-    name: "Organic Moss",
-    description: "Avocados",
-    url: "assets/images/avocado.png",
+    name: "Orange Juice",
+    description: "Orange",
+    url: "assets/images/juice_orange.png",
     price: 800,
   ),
   FreshProduceModel(
-    name: "Organic Moss",
-    description: "Avocados",
-    url: "assets/images/avocado.png",
+    name: "Oils",
+    description: "Heart Oils",
+    url: "assets/images/oils.png",
     price: 800,
   ),
   FreshProduceModel(

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_ui/colors/colors.dart';
+import 'package:grocery_ui/data/data.dart';
+import 'package:grocery_ui/models/models.dart';
 import 'package:grocery_ui/widgets/widgets.dart';
 import '../widgets/menu_category.dart';
 class MenuScreen extends StatefulWidget {
@@ -9,6 +11,7 @@ class MenuScreen extends StatefulWidget {
 }
 
 class _MenuScreenState extends State<MenuScreen> {
+  int activeCategory = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +31,15 @@ class _MenuScreenState extends State<MenuScreen> {
         child: Column(
           children: [
             //  display list of categories
-            MenuCategory(),
+            // MenuCategory(),
+            Container(
+              height: 40.0,
+              child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (_, index) => _menuCategoryItem(category: categories[index], index: index),
+                  separatorBuilder: (_ , __) => SizedBox(width: 10.0,),
+                  itemCount: categories.length),
+            ),
 
             SizedBox(height: 30.0,),
             Row(
@@ -50,6 +61,29 @@ class _MenuScreenState extends State<MenuScreen> {
 
 
 
+    );
+  }
+
+  _menuCategoryItem({CategoryModel category, int index}) {
+    return GestureDetector(
+      onTap: (){
+        setState(() {
+          activeCategory = index;
+        });
+      },
+      child: Container(
+          width: MediaQuery.of(context).size.width * 0.3,
+          height: 40,
+          decoration: BoxDecoration(
+            color: activeCategory == index ? itemsTextColor : primaryColor,
+            borderRadius: BorderRadius.circular(30.0),
+            boxShadow: [
+              BoxShadow(color: shadowColor, blurRadius: 2.0, offset: Offset(2, 4)),
+            ],
+          ),
+          alignment: Alignment.center,
+          child: Text(category.name, style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w600, color: activeCategory == index ? primaryColor : blackTextColor),)
+      ),
     );
   }
 }

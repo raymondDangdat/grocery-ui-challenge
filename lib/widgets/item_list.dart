@@ -36,7 +36,7 @@ class ItemList extends StatelessWidget {
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(15.0),
                       child: Hero(
-                        tag: item.hashCode,
+                        tag: item.name,
                           child: Image.asset(item.url))),
                 ),
                 Positioned(
