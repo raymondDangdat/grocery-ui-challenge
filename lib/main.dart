@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Home.routeName: (context) => Home(),
         ItemDetailScreen.routeName: (context) => ItemDetailScreen(),
+        MenuScreen.routeName: (context) => MenuScreen(),
       },
     );
   }

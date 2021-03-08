@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_ui/screens/home.dart';
+import 'package:grocery_ui/screens/menu_screen.dart';
 import 'package:grocery_ui/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -11,7 +12,7 @@ class NavScreen extends StatefulWidget {
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     Home(),
-    Scaffold(),
+    MenuScreen(),
     Scaffold(),
     Scaffold(),
   ];

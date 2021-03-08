@@ -17,7 +17,7 @@ class _DetailBodyState extends State<DetailBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.55,
+      // height: MediaQuery.of(context).size.height * 0.55,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,

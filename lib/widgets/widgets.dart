@@ -8,3 +8,5 @@ export 'clipper.dart';
 export 'detail_body.dart';
 export 'related_items.dart';
 export 'relatedItemList.dart';
+export 'menu_category.dart';
+export 'menu_category_item.dart';
