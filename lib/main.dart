@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import './screens/screens.dart';
-import 'colors/colors.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Grocery UI',
       theme: ThemeData(
         primarySwatch: Colors.green,
-          fontFamily: "Poppins", primaryColor: primaryColor
+          fontFamily: "Poppins",
       ),
       home: NavScreen(),
       routes: {

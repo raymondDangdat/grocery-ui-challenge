@@ -21,7 +21,7 @@ class RelatedItemList extends StatelessWidget {
                   color: primaryColor,
                   borderRadius: BorderRadius.circular(15.0),
                   boxShadow: [
-                    BoxShadow(color: shadowColor, blurRadius: 8.0, offset: Offset(4, 4)),
+                    BoxShadow(color: shadowColor, blurRadius: 4.0, offset: Offset(2, 4)),
                   ],
                   border: Border.all(width: 0.9, color: shadowColor)
                 ),

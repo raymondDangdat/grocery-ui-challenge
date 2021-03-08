@@ -36,7 +36,7 @@ class Header extends StatelessWidget {
                     ],
                   ),
                   Hero(
-                    tag: item.hashCode,
+                    tag: item.name,
                     child: Image.asset(
                       item.url,
                       width: constraints.maxWidth * 0.6,

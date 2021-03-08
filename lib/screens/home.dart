@@ -15,9 +15,9 @@ class _HomeState extends State<Home> {
         slivers: [
           SliverAppBar(
             brightness: Brightness.dark,
-            // backgroundColor: primaryColor,
+            backgroundColor: itemsTextColor,
             shadowColor: shadowColor,
-            title: Text("Home", style: TextStyle(color: primaryColor),),
+            title: Text("Home", style: TextStyle(color: primaryColor, fontSize: 23.0, fontWeight: FontWeight.bold),),
             centerTitle: true,
             floating: true,
             actions: [
