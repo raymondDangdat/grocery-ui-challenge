@@ -199,6 +199,13 @@ final List<FreshProduceModel> popular_items = [
     description: "Apples",
     url: "assets/images/apples.png",
     price: 1200,
+  ),
+
+  FreshProduceModel(
+    name: "Fish ",
+    description: "Meat",
+    url: "assets/images/meat_fish.png",
+    price: 1200,
   )
 
 ];
