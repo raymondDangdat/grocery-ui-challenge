@@ -18,6 +18,8 @@ class ItemList extends StatelessWidget {
     return InkWell(
       onTap: () => onTap(context),
       child: Column(
+        // mainAxisAlignment: MainAxisAlignment.start,
+        // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
             child: Stack(
@@ -47,9 +49,14 @@ class ItemList extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8.0,),
-          Text(item.name, style: TextStyle(color: blackTextColor, fontWeight: FontWeight.w600),),
-          Text(item.description, style: TextStyle(color: blackTextColor, fontWeight: FontWeight.w600)),
-          Text('\$${item.price}', style: TextStyle(color: Colors.green, fontWeight: FontWeight.w600)),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(item.name, style: TextStyle(color: blackTextColor, fontWeight: FontWeight.w600),),
+              Text(item.description, style: TextStyle(color: blackTextColor, fontWeight: FontWeight.w600)),
+              Text('\$${item.price}', style: TextStyle(color: Colors.green, fontWeight: FontWeight.w600)),
+            ],
+          )
         ],
       ),
     );

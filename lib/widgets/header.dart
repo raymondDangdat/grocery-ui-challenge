@@ -18,7 +18,7 @@ class Header extends StatelessWidget {
           padding:
           const EdgeInsets.only(left: 10, right: 15, top: 20, bottom: 0.0),
           decoration: BoxDecoration(
-            // color: Colors.grey[300],
+            color: Colors.grey[300],
           ),
           child: LayoutBuilder(
             builder: (_, constraints) {
@@ -29,10 +29,9 @@ class Header extends StatelessWidget {
                     children: [
                       InkWell(
                         onTap: () => Navigator.of(context).pop(),
-                        child: Icon(Icons.chevron_left,
+                        child: Icon(Icons.arrow_back,
                             color: appBarIconsColor, size: 30),
                       ),
-                      IconButton(icon: Icon(Icons.search), onPressed: (){}),
                     ],
                   ),
                   Hero(

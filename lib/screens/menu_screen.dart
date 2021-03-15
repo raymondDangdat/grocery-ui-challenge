@@ -3,7 +3,7 @@ import 'package:grocery_ui/colors/colors.dart';
 import 'package:grocery_ui/data/data.dart';
 import 'package:grocery_ui/models/models.dart';
 import 'package:grocery_ui/widgets/widgets.dart';
-import '../widgets/menu_category.dart';
+
 class MenuScreen extends StatefulWidget {
   static const routeName = "menu_screen";
   @override
@@ -15,13 +15,16 @@ class _MenuScreenState extends State<MenuScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[300],
       appBar: AppBar(
+        backgroundColor: Colors.grey[300],
         elevation: 0.0,
-        title: Text("Store", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 23),),
+        leading: Icon(Icons.arrow_back, color: Colors.black,),
+        // title: Text("Store", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 23),),
         centerTitle: true,
         // leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: (){Navigator.pop(context);}),
         actions: [
-          IconButton(icon: Icon(Icons.search), onPressed: (){})
+          IconButton(icon: Icon(Icons.search), onPressed: (){}, color: Colors.black)
         ],
       ),
     body: SafeArea(
@@ -76,7 +79,7 @@ class _MenuScreenState extends State<MenuScreen> {
           height: 40,
           decoration: BoxDecoration(
             color: activeCategory == index ? itemsTextColor : primaryColor,
-            borderRadius: BorderRadius.circular(30.0),
+            borderRadius: BorderRadius.only(topRight: Radius.circular(30.0,), bottomRight: Radius.circular(30.0), topLeft: Radius.circular(30.0)),
             boxShadow: [
               BoxShadow(color: shadowColor, blurRadius: 2.0, offset: Offset(2, 4)),
             ],
