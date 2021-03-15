@@ -10,7 +10,7 @@ class AllCategories extends StatelessWidget {
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) => CategoryItem(category: categories[index]),
-          separatorBuilder: (_ , __) => SizedBox(width: 10.0,),
+          separatorBuilder: (_ , __) => SizedBox(width: 20.0,),
           itemCount: categories.length),
     );
   }

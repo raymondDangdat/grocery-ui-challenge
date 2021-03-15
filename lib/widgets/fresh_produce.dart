@@ -11,7 +11,7 @@ class FreshProduce extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return !isMenuItems ? Container(
-      height: 250.0,
+      height: 200.0,
       child:  ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) => ItemList(item: freshProduce[index]),

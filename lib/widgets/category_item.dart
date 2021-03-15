@@ -15,13 +15,13 @@ class CategoryItem extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
-          width: MediaQuery.of(context).size.width * 0.2,
-          height: 100,
+          width: MediaQuery.of(context).size.width * 0.11,
+          height: 80,
           decoration: BoxDecoration(
-            color: primaryColor,
+            color: containerColor,
             borderRadius: BorderRadius.circular(15.0),
             boxShadow: [
-              BoxShadow(color: shadowColor, blurRadius: 8.0),
+              BoxShadow(color: faintTextColor, blurRadius: 3.0),
             ],
           ),
           child: ClipRRect(
@@ -29,7 +29,7 @@ class CategoryItem extends StatelessWidget {
               child: SvgPicture.asset(category.url)),
         ),
         SizedBox(height: 8.0,),
-        Text(category.name)
+        Text(category.name, style: TextStyle(color: blackTextColor, fontWeight: FontWeight.bold),)
       ],
     );
   }
