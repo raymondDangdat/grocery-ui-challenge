@@ -18,16 +18,18 @@ class ItemList extends StatelessWidget {
     return InkWell(
       onTap: () => onTap(context),
       child: Column(
+        // mainAxisAlignment: MainAxisAlignment.start,
+        // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
             child: Stack(
               children: [
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
-                  width: MediaQuery.of(context).size.width * 0.3,
+                  width: MediaQuery.of(context).size.width * 0.22,
                   height: 200,
                   decoration: BoxDecoration(
-                    color: primaryColor,
+                    color: containerColor,
                     borderRadius: BorderRadius.circular(15.0),
                     boxShadow: [
                       BoxShadow(color: shadowColor, blurRadius: 8.0, offset: Offset(0, 2)),
@@ -40,15 +42,21 @@ class ItemList extends StatelessWidget {
                           child: Image.asset(item.url))),
                 ),
                 Positioned(
-                  right: 10.0,
-                    top: 10.0,
-                    child: IconButton(icon: Icon(Icons.favorite_border), onPressed: (){}))
+                  right: 0.0,
+                    top: 0.0,
+                    child: IconButton(icon: Icon(Icons.favorite, color: Colors.grey[300],), onPressed: (){}))
               ],
             ),
           ),
           SizedBox(height: 8.0,),
-          Text(item.name),
-          Text(item.description)
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(item.name, style: TextStyle(color: blackTextColor, fontWeight: FontWeight.w600),),
+              Text(item.description, style: TextStyle(color: blackTextColor, fontWeight: FontWeight.w600)),
+              Text('\$${item.price}', style: TextStyle(color: Colors.green, fontWeight: FontWeight.w600)),
+            ],
+          )
         ],
       ),
     );

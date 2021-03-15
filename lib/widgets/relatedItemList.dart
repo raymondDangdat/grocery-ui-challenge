@@ -18,10 +18,10 @@ class RelatedItemList extends StatelessWidget {
                 width: 190.0,
                 height: 80.0,
                 decoration: BoxDecoration(
-                  color: primaryColor,
+                  color: containerColor,
                   borderRadius: BorderRadius.circular(15.0),
                   boxShadow: [
-                    BoxShadow(color: shadowColor, blurRadius: 4.0, offset: Offset(2, 4)),
+                    BoxShadow(color: Colors.grey[300], blurRadius: 0.2),
                   ],
                   border: Border.all(width: 0.9, color: shadowColor)
                 ),

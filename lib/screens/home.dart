@@ -11,10 +11,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[300],
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            brightness: Brightness.dark,
+            brightness: Brightness.light,
             backgroundColor: itemsTextColor,
             shadowColor: shadowColor,
             title: Text("Home", style: TextStyle(color: primaryColor, fontSize: 23.0, fontWeight: FontWeight.bold),),
@@ -34,7 +35,7 @@ class _HomeState extends State<Home> {
           ),
 
           SliverPadding(
-            padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0),
             sliver: SliverToBoxAdapter(
               child: AllCategories(),
             ),

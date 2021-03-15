@@ -24,7 +24,7 @@ class _DetailBodyState extends State<DetailBody> {
         borderRadius: BorderRadius.only(topRight: Radius.circular(20.0), topLeft: Radius.circular(20.0), ),
         boxShadow: [
           BoxShadow(
-            blurRadius: 10.0, color: shadowColor, offset: Offset(20, 0)
+            blurRadius: 0.2,
           )
         ]
       ),
@@ -37,22 +37,30 @@ class _DetailBodyState extends State<DetailBody> {
               children: [
                 Text(widget.item.name, style: TextStyle(fontSize: 21.0, fontWeight: FontWeight.w600),),
 
-                Row(
-                  children: [
-                    Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), bottomLeft: Radius.circular(30.0))),
-                        child: IconButton(icon: Icon(Icons.remove), onPressed: (){})),
-                    SizedBox(width: 5.0,),
-                    Text("1", style: TextStyle(fontWeight: FontWeight.bold),),
-                    SizedBox(width: 5.0,),
-                    Container(
-                        decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.only(topRight: Radius.circular(30.0), bottomRight: Radius.circular(30.0))),
-                        child: IconButton(icon: Icon(Icons.add), onPressed: (){})),
-                  ],
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30.0),
+                    border: Border.all(
+                      color: Colors.grey
+                    )
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), bottomLeft: Radius.circular(30.0))),
+                          child: IconButton(icon: Icon(Icons.remove), onPressed: (){})),
+                      SizedBox(width: 15.0,),
+                      Text("1", style: TextStyle(fontWeight: FontWeight.bold),),
+                      SizedBox(width: 15.0,),
+                      Container(
+                          decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.only(topRight: Radius.circular(30.0), bottomRight: Radius.circular(30.0))),
+                          child: IconButton(icon: Icon(Icons.add), onPressed: (){})),
+                    ],
+                  ),
                 ),
 
               ],
@@ -100,11 +108,12 @@ class _DetailBodyState extends State<DetailBody> {
           SizedBox(height: 25.0,),
           
          ElevatedButton(
-           style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))),
+           style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))),
              onPressed: (){}, child: Padding(
                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
                child: Text("Add to cart"),
-             ))
+             )),
+          SizedBox(height: 15.0,)
         ],
       ),
     );
