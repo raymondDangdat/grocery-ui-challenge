@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_ui/colors/colors.dart';
+import 'package:grocery_ui/size_config.dart';
 import 'package:grocery_ui/widgets/widgets.dart';
 
 class Home extends StatefulWidget {
@@ -11,6 +12,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: CustomScrollView(

@@ -10,3 +10,4 @@ export 'related_items.dart';
 export 'relatedItemList.dart';
 export 'menu_category.dart';
 export 'menu_category_item.dart';
+export 'cart_items_widget.dart';

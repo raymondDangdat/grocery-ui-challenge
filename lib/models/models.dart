@@ -15,3 +15,13 @@ class FreshProduceModel{
 
   FreshProduceModel({this.name, this.url, this.description, this.price});
 }
+
+class CartItems{
+  final String id;
+  final String name;
+  final int price;
+  final int qty;
+  final imgUrl;
+
+  CartItems({this.id, this.name, this.price, this.qty, this.imgUrl});
+}

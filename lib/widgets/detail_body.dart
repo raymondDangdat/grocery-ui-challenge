@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_ui/colors/colors.dart';
 import 'package:grocery_ui/models/models.dart';
+import 'package:grocery_ui/screens/cart_screen.dart';
 import 'package:grocery_ui/widgets/widgets.dart';
 
 class DetailBody extends StatefulWidget {
@@ -109,7 +110,9 @@ class _DetailBodyState extends State<DetailBody> {
           
          ElevatedButton(
            style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))),
-             onPressed: (){}, child: Padding(
+             onPressed: (){
+             Navigator.of(context).push(MaterialPageRoute(builder: (context)=> CartScreen()));
+             }, child: Padding(
                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
                child: Text("Add to cart"),
              )),

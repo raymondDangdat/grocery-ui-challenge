@@ -209,3 +209,34 @@ final List<FreshProduceModel> popular_items = [
   )
 
 ];
+
+final List<CartItems> cartItems = [
+  CartItems(
+    id: '1',
+    name: "Pepper",
+    price: 200,
+    qty: 1,
+    imgUrl: "https://images.unsplash.com/photo-1572437926930-cd6a6cd52de4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBlcHBlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  ),
+  CartItems(
+      id: '2',
+      name: "Rice",
+      price: 200,
+      qty: 1,
+    imgUrl: "https://images.unsplash.com/photo-1592119747782-d8c12c2ea267?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGpvbGxvZiUyMHJpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  ),
+  CartItems(
+      id: '3',
+      name: "Meat",
+      price: 200,
+      qty: 1,
+    imgUrl: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  ),
+  CartItems(
+      id: '4',
+      name: "Banana",
+      price: 200,
+      qty: 1,
+    imgUrl: "https://images.unsplash.com/photo-1543218024-57a70143c369?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8YmFuYW5hfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  )
+];

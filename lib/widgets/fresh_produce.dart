@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_ui/data/data.dart';
+import 'package:grocery_ui/size_config.dart';
 import 'widgets.dart';
 
 class FreshProduce extends StatelessWidget {
@@ -11,7 +12,7 @@ class FreshProduce extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return !isMenuItems ? Container(
-      height: 200.0,
+      height: getProportionateScreenHeight(200),
       child:  ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) => ItemList(item: freshProduce[index]),

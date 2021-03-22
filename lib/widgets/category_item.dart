@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grocery_ui/colors/colors.dart';
 import 'package:grocery_ui/models/models.dart';
+import 'package:grocery_ui/size_config.dart';
 
 class CategoryItem extends StatelessWidget {
   final CategoryModel category;
@@ -15,8 +16,8 @@ class CategoryItem extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
-          width: MediaQuery.of(context).size.width * 0.11,
-          height: 80,
+          width: getProportionateScreenWidth(90),
+          height: 60,
           decoration: BoxDecoration(
             color: containerColor,
             borderRadius: BorderRadius.circular(15.0),

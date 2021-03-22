@@ -19,7 +19,6 @@ class _MenuScreenState extends State<MenuScreen> {
       appBar: AppBar(
         backgroundColor: Colors.grey[300],
         elevation: 0.0,
-        leading: Icon(Icons.arrow_back, color: Colors.black,),
         // title: Text("Store", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 23),),
         centerTitle: true,
         // leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: (){Navigator.pop(context);}),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_ui/colors/colors.dart';
 import 'package:grocery_ui/models/models.dart';
 import 'package:grocery_ui/screens/screens.dart';
+import 'package:grocery_ui/size_config.dart';
 class ItemList extends StatelessWidget {
   final FreshProduceModel item;
 
@@ -27,7 +28,7 @@ class ItemList extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
                   width: MediaQuery.of(context).size.width * 0.22,
-                  height: 200,
+                  height: getProportionateScreenHeight(300),
                   decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: BorderRadius.circular(15.0),

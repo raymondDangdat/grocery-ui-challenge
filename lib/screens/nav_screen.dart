@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_ui/screens/home.dart';
+import 'package:grocery_ui/screens/map_screen.dart';
 import 'package:grocery_ui/screens/menu_screen.dart';
 import 'package:grocery_ui/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -14,14 +15,15 @@ class _NavScreenState extends State<NavScreen> {
     Home(),
     MenuScreen(),
     Scaffold(),
-    Scaffold(),
+    MapScreen(),
+
   ];
 
   final List<IconData> _icons = const[
     Icons.home,
     MdiIcons.menu,
     Icons.shopping_bag_outlined,
-    MdiIcons.accountCircleOutline,
+    Icons.location_on,
   ];
 
   
